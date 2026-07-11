@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Generator Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome untuk Icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo"><i class="fa-solid fa-wand-magic-sparkles"></i> Rizki Generator Tools</h1>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-target="brat"><i class="fa-solid fa-font"></i> Brat</button>
+                <button class="nav-item" data-target="bratvid"><i class="fa-solid fa-video"></i> Bratvid</button>
+                <button class="nav-item" data-target="fakecall"><i class="fa-solid fa-phone"></i> Fake Call</button>
+                <button class="nav-item" data-target="naruto"><i class="fa-solid fa-fire"></i> Teks Naruto</button>
+                <button class="nav-item" data-target="dragonball"><i class="fa-solid fa-bolt"></i> Teks Dragonball</button>
+                <button class="nav-item" data-target="removebg"><i class="fa-solid fa-eraser"></i> Hapus BG</button>
+                <button class="nav-item" data-target="lobiml"><i class="fa-solid fa-gamepad"></i> Lobi ML</button>
+                <button class="nav-item" data-target="lobiff"><i class="fa-solid fa-gun"></i> Lobi FF</button>
+                <button class="nav-item" data-target="buatktp"><i class="fa-solid fa-id-card"></i> Buat KTP</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Dynamic Form Section -->
+            <section class="card form-card">
+                <h2 id="toolTitle" class="tool-title">Brat Generator</h2>
+                <form id="generatorForm" novalidate>
+                    <div id="dynamicInputs">
+                        <!-- Inputs will be injected here by JavaScript -->
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btnGenerate">
+                        <i class="fa-solid fa-gears"></i> Generate
+                    </button>
+                </form>
+            </section>
+
+            <!-- Result Section -->
+            <section class="card result-card">
+                <h2>Result Preview</h2>
+                <div class="preview-container">
+                    <div id="loadingOverlay" class="loading-overlay hidden">
+                        <div class="spinner"></div>
+                        <p>Memproses, mohon tunggu...</p>
+                    </div>
+                    <div id="placeholderText" class="placeholder-text">
+                        <i class="fa-regular fa-image"></i>
+                        <p>Belum ada gambar yang di-generate.</p>
+                    </div>
+                    <img id="resultImage" class="result-image hidden" alt="Result Preview">
+                </div>
+                <button id="btnDownload" class="btn btn-success hidden">
+                    <i class="fa-solid fa-download"></i> Download
+                </button>
+            </main>
+        </div>
+        <p style="text-align: center;">buat yang mau liat fitur lainya ada di garis 3 di kanan atas</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
