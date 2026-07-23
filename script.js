@@ -8,14 +8,14 @@ const App = {
     toolsConfig: {
         brat: {
             title: "Brat Generator",
-            apiUrl: "https://api.cmnty.web.id/maker/brat?text={text}",
+            apiUrl: "https://api.cmnty.biz.id/maker/brat?text={text}",
             inputs: [
                 { id: "text", label: "Masukan Teks", type: "text", placeholder: "Contoh: bajuku cerah", required: true }
             ]
         },
         bratvid: {
             title: "Bratvid Video Generator",
-            apiUrl: "https://api.cmnty.web.id/maker/bratvid?text={text}",
+            apiUrl: "https://api.cmnty.biz.id/maker/bratvid?text={text}",
             inputs: [
                 { id: "text", label: "Masukan Teks Video", type: "text", placeholder: "Contoh: teks video brat", required: true }
             ]
@@ -31,7 +31,7 @@ const App = {
         },
         naruto: {
             title: "Naruto Text Style Logo",
-            apiUrl: "https://api.cmnty.web.id/maker/naruto?text={text}",
+            apiUrl: "https://api.cmnty.biz.id/maker/naruto?text={text}",
             inputs: [
                 { id: "text", label: "Teks Logo Naruto", type: "text", placeholder: "Contoh: Rizki", required: true }
             ]
@@ -45,14 +45,14 @@ const App = {
         },
         removebg: {
             title: "Hapus Background Image",
-            apiUrl: "https://api.cmnty.web.id/tools/removebg?url={url}",
+            apiUrl: "https://api.cmnty.biz.id/tools/removebg?url={url}",
             inputs: [
                 { id: "url", label: "URL Gambar Terbuka", type: "url", placeholder: "https://example.com/photo-to-remove.jpg", required: true }
             ]
         },
         lobiml: {
             title: "Fake Mobile Legends Lobby",
-            apiUrl: "https://api.cmnty.web.id/maker/fake-ml?usr={usr}&rank={rank}&border=random&lobby_type=indo&avatar={avatar}",
+            apiUrl: "https://api.cmnty.biz.id/maker/fake-ml?usr={usr}&rank={rank}&border=random&lobby_type=indo&avatar={avatar}",
             inputs: [
                 { id: "usr", label: "Username ML", type: "text", placeholder: "Contoh: RizkiGans", required: true },
                 { id: "rank", label: "Pilih Rank", type: "select", options: ["warrior", "elite", "master", "gmaster", "epic", "legend", "mythic", "honor", "glory", "imo"], required: true },
@@ -61,14 +61,14 @@ const App = {
         },
         lobiff: {
             title: "Fake Free Fire Lobby",
-            apiUrl: "https://api.cmnty.web.id/maker/fake-ff?usr={usr}",
+            apiUrl: "https://api.cmnty.biz.id/maker/fake-ff?usr={usr}",
             inputs: [
                 { id: "usr", label: "Username FF", type: "text", placeholder: "Contoh: R I Z K I • FF", required: true }
             ]
         },
         buatktp: {
             title: "E-KTP Canvas Creator",
-            apiUrl: "https://api.cmnty.web.id/canvas/ektp?provinsi={provinsi}&kota={kota}&nik={nik}&nama={nama}&ttl={ttl}&jenis_kelamin={jenis_kelamin}&golongan_darah={golongan_darah}&alamat={alamat}&rt%2Frw={rtrw}&kel%2Fdesa={keldesa}&kecamatan={kecamatan}&agama={agama}&status={status}&pekerjaan={pekerjaan}&kewarganegaraan=WNI&masa_berlaku=Seumur+Hidup&terbuat={terbuat}&pas_photo={pas_photo}",
+            apiUrl: "https://api.cmnty.biz.id/canvas/ektp?provinsi={provinsi}&kota={kota}&nik={nik}&nama={nama}&ttl={ttl}&jenis_kelamin={jenis_kelamin}&golongan_darah={golongan_darah}&alamat={alamat}&rt%2Frw={rtrw}&kel%2Fdesa={keldesa}&kecamatan={kecamatan}&agama={agama}&status={status}&pekerjaan={pekerjaan}&kewarganegaraan=WNI&masa_berlaku=Seumur+Hidup&terbuat={terbuat}&pas_photo={pas_photo}",
             inputs: [
                 { id: "provinsi", label: "Provinsi", type: "text", placeholder: "JAWA BARAT", required: true },
                 { id: "kota", label: "Kota / Kabupaten", type: "text", placeholder: "KOTA BANDUNG", required: true },
