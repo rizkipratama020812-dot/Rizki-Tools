@@ -8,7 +8,7 @@ const App = {
     toolsConfig: {
         brat: {
             title: "Brat Generator",
-            apiUrl: "https://api.cmnty.biz.id/maker/brat?text={text}",
+            apiUrl: "https://api.cmnty.biz.id/maker/brat?text={text}&apikey=cmnty-bbb66c2431878f83c738fecad51e7c3f",
             inputs: [
                 { id: "text", label: "Masukan Teks", type: "text", placeholder: "Contoh: bajuku cerah", required: true }
             ]
