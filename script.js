@@ -25,6 +25,17 @@ const TOOLS_CONFIG = [
         type: 'image'
     },
     {
+        
+        id: 'brat hd',
+        name: 'Brat HD',
+        desc: 'Ubah teks menjadi gambar dengan gaya BRAT HD.',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14c1.2 2 2.6 3 4 3s2.8-1 4-3"/></svg>',
+        inputs: [{ name: 'text', label: 'Teks', type: 'text', placeholder: 'Masukan teks BratHD...' }],
+        endpoint: (data) => `https://api-faa.my.id/faa/brathd?text=${formatParam(data.text)}`,
+        type: 'image'
+    
+    },
+    {
         id: 'bratvid',
         name: 'Bratvid',
         desc: 'Buat animasi Teks Brat GIF ketik secara cepat.',
@@ -191,6 +202,24 @@ const TOOLS_CONFIG = [
         icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>',
         inputs: [{ name: 'url', label: 'URL Gambar Utama', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }],
         endpoint: (data) => `${BASE_DOMAIN}/tools/removebg?url=${encodeURIComponent(data.url)}&apikey=${API_KEY}`,
+        type: 'image'
+    },
+    {
+        id: 'AI HD V1',
+        name: 'AI HD V1',
+        desc: 'Tingkatkan kualitas gambar secara otomatis ke HD v1.',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>',
+        inputs: [{ name: 'url', label: 'URL Gambar Utama', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }],
+        endpoint: (data) => `https://api-faa.my.id/faa/superhd?url=${encodeURIComponent(data.url)}`,
+        type: 'image'
+    },
+    {
+        id: 'AI HD V2',
+        name: 'AI HD V2',
+        desc: 'Tingkatkan kualitas gambar secara otomatis ke HD v2.',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>',
+        inputs: [{ name: 'url', label: 'URL Gambar Utama', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }],
+        endpoint: (data) => `https://api-faa.my.id/faa/hdv2?url=${encodeURIComponent(data.url)}`,
         type: 'image'
     },
     {
