@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     RizkiToolsApp.init();
 });
 
-const API_KEY = 'cmnty-bbb66c2431878f83c738fecad51e7c3f';
+const API_KEY = 'cmnty-779b4d0f2bd20fbd9ce8b44be23f9436';
 const BASE_DOMAIN = 'https://api.cmnty.biz.id';
 
 /**
