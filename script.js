@@ -18,7 +18,7 @@ const TOOLS_CONFIG = [
     {
         id: 'brat',
         name: 'Brat Text',
-        desc: 'Buat gambar tren Teks Brat minimalis serba hijau/putih.',
+        desc: 'Ubah teks menjadi gambar dengan gaya BRAT (generatif dan bergaya meme/kreatif). Masukkan teks yang ingin dijadikan gambar..',
         icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14c1.2 2 2.6 3 4 3s2.8-1 4-3"/></svg>',
         inputs: [{ name: 'text', label: 'Teks', type: 'text', placeholder: 'Masukan teks Brat...' }],
         endpoint: (data) => `https://api-faa.my.id/faa/brat?text=${formatParam(data.text)}`,
