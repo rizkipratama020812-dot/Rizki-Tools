@@ -409,7 +409,7 @@ const TOOLS_CONFIG = [
             { name: 'tanggal', label: 'Tanggal Terbuat', type: 'text', placeholder: '14-07-2024' },
             { name: 'pas_photo', label: 'URL Pas Foto 3x4', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }
         ],
-        endpoint: (data) => `${BASE_DOMAIN}/canvas/ektp?provinsi=${formatParam(data.provinsi)}&kota=${formatParam(data.kota)}&nik=${formatParam(data.nik)}&nama=${formatParam(data.nama)}&ttl=${formatParam(data.ttl)}&jenis_kelamin=${formatParam(data.jenis_kelamin)}&golongan_darah=${formatParam(data.golongan)}&alamat=${formatParam(data.alamat)}&rt%2Frw=${formatParam(data.rt_rw)}&kel%2Fdesa=${formatParam(data.kelurahan)}&kecamatan=${formatParam(data.kecamatan)}&agama=${formatParam(data.agama)}&status=${formatParam(data.status)}&pekerjaan=${formatParam(data.pekerjaan)}&kewarganegaraan=WNI&masa_berlaku=Seumur+Hidup&terbuat=${formatParam(data.tanggal)}&pas_photo=${encodeURIComponent(data.pas_photo)}&apikey=${API_KEY}`,
+        endpoint: (data) => `https://api.synoxcloud.xyz/canvas/e-ktp?provinsi=${formatParam(data.provinsi)}&kota=${formatParam(data.kota)}&nik=${formatParam(data.nik)}&nama=${formatParam(data.nama)}&ttl=${formatParam(data.ttl)}&jenis_kelamin=${formatParam(data.jenis_kelamin)}&golongan_darah=${formatParam(data.golongan)}&alamat=${formatParam(data.alamat)}&rt_rw=${formatParam(data.rt_rw)}&kel_desa=${formatParam(data.kelurahan)}&kecamatan=${formatParam(data.kecamatan)}&agama=${formatParam(data.agama)}&status=${formatParam(data.status)}&pekerjaan=${formatParam(data.pekerjaan)}&kewarganegaraan=WNI&masa_berlaku=seumur%20hidup&terbuat=${formatParam(data.tanggal)}&pas_photo=${encodeURIComponent(data.pas_photo)}`,
         type: 'image'
     }
 ];
