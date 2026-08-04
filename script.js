@@ -214,6 +214,20 @@ const TOOLS_CONFIG = [
         type: 'image'
     },
     {
+        id: 'fakecallwav2',
+        name: 'Fake CALL WA V2',
+        desc: 'Bikin fake tampilan telepon masuk.(kalo v1 eror)',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>',
+        inputs: [
+            
+            { name: 'name', label: 'Nama kontak', type: 'text', placeholder: 'Contoh: Ayang ❤️' },
+            { name: 'time', label: 'Durasi', type: 'text', placeholder: 'Contoh: 00:00.' },
+            { name: 'avatar', label: 'URL Avatar / Foto', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }
+        ],
+        endpoint: (data) => `https://api.ikyyxd.my.id/canvas/fakecall?imgUrl=${encodeURIComponent(data.avatar)}&name=${encodeURIComponent(data.name)}&duras${encodeURIComponent(data.time)}`,
+        type: 'image'
+    },
+    {
         id: 'fakewa',
         name: 'Fake WA',
         desc: 'Generate Fake WhatsApp Profile.',
