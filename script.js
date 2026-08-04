@@ -224,7 +224,7 @@ const TOOLS_CONFIG = [
             { name: 'time', label: 'Durasi', type: 'text', placeholder: 'Contoh: 00:00.' },
             { name: 'avatar', label: 'URL Avatar / Foto', type: 'url', placeholder: 'https://i.ibb.co/sample.jpg' }
         ],
-        endpoint: (data) => `https://api.ikyyxd.my.id/canvas/fakecall?imgUrl=${encodeURIComponent(data.avatar)}&name=${encodeURIComponent(data.name)}&duras${encodeURIComponent(data.time)}`,
+        endpoint: (data) => `https://api.ikyyxd.my.id/canvas/fakecall?imgUrl=${encodeURIComponent(data.avatar)}&name=${formatParam(data.name)}&durasi=${formatParam(data.time)}`,
         type: 'image'
     },
     {
