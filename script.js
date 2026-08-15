@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const API_KEY = 'cmnty-37d46706ef0384427ec32ba80151688e';
-const BASE_DOMAIN = 'https://api.cmnty.biz.id';
+const BASE_DOMAIN = 'https://api.cmnty.eu.cc';
 
 /**
  * Daftar Master Tools ( Tool Konfigurasi Lengkap)
