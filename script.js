@@ -41,7 +41,7 @@ const TOOLS_CONFIG = [
         desc: 'Buat animasi Teks Brat GIF ketik secara cepat.',
         icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="0.7" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.7" fill="currentColor" stroke="none"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>',
         inputs: [{ name: 'text', label: 'Teks', type: 'text', placeholder: 'Masukan teks Brat GIF...' }],
-        endpoint: (data) => `${BASE_DOMAIN}/maker/bratvidv2?text=${formatParam(data.text)}&apikey=${API_KEY}`,
+        endpoint: (data) => `https://api-faa.my.id/faa/bratvid?text=${formatParam(data.text)}`,
         type: 'gif'
     },
     {
